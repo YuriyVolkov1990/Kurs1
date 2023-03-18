@@ -2,8 +2,8 @@ package pro.sky.java.course1.courseWork;
 
 public class Employee {
     private final String person;//содержит ФИО сотрудника
-    private int depart;//отдел 1-5
-    private int salary;//зарплата
+    int depart;//отдел 1-5
+    int salary;//зарплата
     int id;//id сотрудника
 
 public String getPerson() {
@@ -18,8 +18,9 @@ public int getSalary() {
 public int getId() {
     return id;
 }
-public void setDepart(int depart) {
+public int setDepart(int depart) {
     this.depart = depart;
+    return depart;
 }
 public void setSalary(int salary) {
     this.salary = salary;
@@ -34,9 +35,9 @@ public Employee(String person, int depart, int salary) {
     @Override
     public String toString() {
         return "Сотрудик {" +
-                "ФИО='" + person + '\'' +
-                ", Отдел=" + depart +
-                ", Зарплата=" + salary +
+                "ФИО='" + getPerson() + '\'' +
+                ", Отдел=" + getDepart() +
+                ", Зарплата=" + getSalary() +
                 ", id=" + getId() +
                 '}';
     }

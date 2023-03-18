@@ -18,5 +18,6 @@ public class Main {
         employees[9] = new Employee("Акенп Иван Иванович", 5,1000009);
         System.out.println(Arrays.toString(employees));
         System.out.println("Сотрудник " + employees[0].getPerson() + " из отдела " + employees[0].getDepart() + " переведён в отдел " + employees[0].setDepart(10));
+        System.out.println("Сотруднику " + employees[1].getPerson() + " назначена зарплата " + employees[1].setSalary(1) + " рубль");
     }
  }

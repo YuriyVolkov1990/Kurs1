@@ -22,8 +22,9 @@ public int setDepart(int depart) {
     this.depart = depart;
     return depart;
 }
-public void setSalary(int salary) {
+public int setSalary(int salary) {
     this.salary = salary;
+    return salary;
 }
 public Employee(String person, int depart, int salary) {
     this.person = person;

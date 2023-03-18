@@ -1,14 +1,10 @@
 package pro.sky.java.course1.courseWork;
 
 public class Employee {
-    private String person;//содержит ФИО сотрудника
+    private final String person;//содержит ФИО сотрудника
     private int depart;//отдел 1-5
     private int salary;//зарплата
-    private int id;//id сотрудника
-public static int counterId(int id) {
-    id = id + 1;
-    return id;
-}
+    int id;//id сотрудника
 
 public String getPerson() {
     return person;
@@ -32,6 +28,16 @@ public Employee(String person, int depart, int salary) {
     this.person = person;
     this.depart = depart;
     this.salary = salary;
-    id = counterId(id);
+    this.id = Main.counterId++;
+    }
+
+    @Override
+    public String toString() {
+        return "Сотрудик {" +
+                "ФИО='" + person + '\'' +
+                ", Отдел=" + depart +
+                ", Зарплата=" + salary +
+                ", id=" + getId() +
+                '}';
     }
 }

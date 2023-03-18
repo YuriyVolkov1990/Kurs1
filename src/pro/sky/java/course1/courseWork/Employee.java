@@ -4,11 +4,11 @@ public class Employee {
     private String person;//содержит ФИО сотрудника
     private int depart;//отдел 1-5
     private int salary;//зарплата
-    private int id;
+    private int id;//id сотрудника
 public static int counterId(int id) {
     id = id + 1;
     return id;
-    }
+}
 
 public String getPerson() {
     return person;

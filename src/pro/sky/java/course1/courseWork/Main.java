@@ -15,6 +15,11 @@ public class Main {
         Employee.employees[8] = new Employee("Уцевыва Иван Иванович", 4, 9);
         Employee.employees[9] = new Employee("Акенп Иван Иванович", 5, 10);
         System.out.println(Arrays.toString(Employee.employees));
+        Employee.employees[1].setSalary(30);
+        System.out.println("Сотруднику " + Employee.employees[1].getPerson() + " назначена зарплата " + Employee.employees[1].getSalary() + "р.");
+        Employee.employees[4].setDepart(10);
+        System.out.println("Сотрудник " + Employee.employees[4].getPerson() + " переведён в отдел " + Employee.employees[4].getDepart());
+        System.out.println();
         Employee.getAllEmployees();
         double sumSalary = Employee.getSumSalary();
         System.out.println("Суммарная зп: " + sumSalary);

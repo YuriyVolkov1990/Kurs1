@@ -78,11 +78,6 @@ public class Employee {
     }
     @Override
     public String toString() {
-        return "Сотрудик {" +
-                "ФИО='" + person + '\'' +
-                ", Отдел=" + depart +
-                ", Зарплата=" + salary +
-                ", id=" + id +
-                '}';
+        return "Сотрудик №" + id + " ФИО " + person + "." + " Отдел " + depart + " Зарплата: " + salary;
     }
 }

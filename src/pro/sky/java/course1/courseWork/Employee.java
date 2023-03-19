@@ -4,13 +4,14 @@ public class Employee {
     private final String person;//содержит ФИО сотрудника
     private int depart;//отдел 1-5
     private double salary;//зарплата
-    private static int id = 0;//id сотрудника
+    private static int counter = 0;//id сотрудника
+    private final int id;
 
-    public Employee(String person, int depart, int salary) {
+    public Employee(String person, int depart, double salary) {
         this.person = person;
         this.depart = depart;
         this.salary = salary;
-        this.id = id++;
+        this.id=counter++;
     }
     public int getId() {
         return this.id;
@@ -78,6 +79,6 @@ public class Employee {
     }
     @Override
     public String toString() {
-        return "Сотрудик №" + id + " ФИО " + person + "." + " Отдел " + depart + " Зарплата: " + salary;
+        return "Сотрудик №" + getId() + " ФИО " + person + "." + " Отдел " + depart + " Зарплата: " + salary;
     }
 }

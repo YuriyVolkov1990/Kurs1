@@ -42,33 +42,33 @@ public class Employee {
         }
     }
     public static double getSumSalary() {
-        double totalSalary = 0;
+        double sumSalary = 0;
         for (Employee employee : employees) {
-            totalSalary += employee.getSalary();
+            sumSalary += employee.getSalary();
         }
-        return totalSalary;
+        return sumSalary;
     }
     public static Employee getMinSalary() {
-        Employee minSalaryEmployee = employees[0];
+        Employee minSalary = employees[0];
         for (Employee employee : employees) {
-            if (employee.getSalary() < minSalaryEmployee.getSalary()) {
-                minSalaryEmployee =employee;
+            if (employee.getSalary() < minSalary.getSalary()) {
+                minSalary =employee;
             }
         }
-        return  minSalaryEmployee;
+        return  minSalary;
     }
     public static Employee getMaxSalary() {
-        Employee maxSalaryEmployee = employees[0];
+        Employee maxSalary = employees[0];
         for (Employee employee : employees) {
-            if (employee.getSalary() > maxSalaryEmployee.getSalary()) {
-                maxSalaryEmployee = employee;
+            if (employee.getSalary() > maxSalary.getSalary()) {
+                maxSalary = employee;
             }
         }
-        return maxSalaryEmployee;
+        return maxSalary;
     }
     public static double getAverageSalary() {
-        double totalSalary = getSumSalary();
-        return totalSalary / employees.length;
+        double sumSalary = getSumSalary();
+        return sumSalary / employees.length;
         }
     public static String[] getEmployeesFullNames() {
         String[] employeesFullNames = new String[employees.length];

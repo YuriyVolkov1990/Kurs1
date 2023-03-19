@@ -1,10 +1,10 @@
 package pro.sky.java.course1.courseWork;
 
 public class Employee {
-    private final String person;//содержит ФИО сотрудника
-    private int depart;//отдел 1-5
-    private double salary;//зарплата
-    private static int counter = 0;//id сотрудника
+    private final String person;
+    private int depart;
+    private double salary;
+    private static int counter = 0;
     private final int id;
 
     public Employee(String person, int depart, double salary) {

@@ -19,11 +19,11 @@ public class Main {
         double totalSalary = Employee.getTotalSalary();
         System.out.println(totalSalary);
         Employee minSalaryEmployee = Employee.getMinSalaryEmployee();
-        System.out.println(minSalaryEmployee);
+        System.out.println("Минимальная зп: "+minSalaryEmployee);
         Employee maxSalaryEmployee = Employee.getMaxSalaryEmployee();
-        System.out.println(maxSalaryEmployee);
+        System.out.println("Максимальная зп: "+maxSalaryEmployee);
         double averageSalary = Employee.getAverageSalary();
-        System.out.println(averageSalary);
+        System.out.println("Средняя зп: "+averageSalary);
         String[] employeesFullNames = Employee.getEmployeesFullNames();
         System.out.println("ФИО:");
         for (String fullName : employeesFullNames) {

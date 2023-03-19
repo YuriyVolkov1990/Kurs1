@@ -41,14 +41,14 @@ public class Employee {
             System.out.println(employee);
         }
     }
-    public static double getTotalSalary() {
+    public static double getSumSalary() {
         double totalSalary = 0;
         for (Employee employee : employees) {
             totalSalary += employee.getSalary();
         }
         return totalSalary;
     }
-    public static Employee getMinSalaryEmployee() {
+    public static Employee getMinSalary() {
         Employee minSalaryEmployee = employees[0];
         for (Employee employee : employees) {
             if (employee.getSalary() < minSalaryEmployee.getSalary()) {
@@ -57,7 +57,7 @@ public class Employee {
         }
         return  minSalaryEmployee;
     }
-    public static Employee getMaxSalaryEmployee() {
+    public static Employee getMaxSalary() {
         Employee maxSalaryEmployee = employees[0];
         for (Employee employee : employees) {
             if (employee.getSalary() > maxSalaryEmployee.getSalary()) {
@@ -67,7 +67,7 @@ public class Employee {
         return maxSalaryEmployee;
     }
     public static double getAverageSalary() {
-        double totalSalary = getTotalSalary();
+        double totalSalary = getSumSalary();
         return totalSalary / employees.length;
         }
     public static String[] getEmployeesFullNames() {
@@ -79,6 +79,6 @@ public class Employee {
     }
     @Override
     public String toString() {
-        return "Сотрудик №" + getId() + " ФИО " + person + "." + " Отдел " + depart + " Зарплата: " + salary;
+        return "Сотрудик №" + getId() + " ФИО " + getPerson() + "." + " Отдел " + getDepart() + " Зарплата: " + getSalary();
     }
 }

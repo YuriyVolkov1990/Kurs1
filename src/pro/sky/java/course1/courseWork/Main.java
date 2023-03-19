@@ -16,11 +16,11 @@ public class Main {
         Employee.employees[9] = new Employee("Акенп Иван Иванович", 5, 10);
         System.out.println(Arrays.toString(Employee.employees));
         Employee.getAllEmployees();
-        double totalSalary = Employee.getTotalSalary();
+        double totalSalary = Employee.getSumSalary();
         System.out.println(totalSalary);
-        Employee minSalaryEmployee = Employee.getMinSalaryEmployee();
+        Employee minSalaryEmployee = Employee.getMinSalary();
         System.out.println("Минимальная зп: "+minSalaryEmployee);
-        Employee maxSalaryEmployee = Employee.getMaxSalaryEmployee();
+        Employee maxSalaryEmployee = Employee.getMaxSalary();
         System.out.println("Максимальная зп: "+maxSalaryEmployee);
         double averageSalary = Employee.getAverageSalary();
         System.out.println("Средняя зп: "+averageSalary);

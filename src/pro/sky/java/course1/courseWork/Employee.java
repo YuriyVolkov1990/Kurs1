@@ -12,7 +12,9 @@ public class Employee {
         this.salary = salary;
         this.id = id++;
     }
-
+    public int getId() {
+        return this.id;
+    }
     public String getPerson() {
         return this.person;
     }
@@ -23,10 +25,6 @@ public class Employee {
 
     public double getSalary() {
         return this.salary;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public void setDepart(int depart) {

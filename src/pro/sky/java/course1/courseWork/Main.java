@@ -21,15 +21,21 @@ public class Main {
         System.out.println("Сотрудник " + employees[0].getPerson() + " из отдела " + employees[0].getDepart() + " переведён в отдел " + employees[0].setDepart(10));
         System.out.println("Сотруднику " + employees[1].getPerson() + " назначена зарплата " + employees[1].setSalary(2) + " р.");
         int sum = 0;
-        int maxSalary = 0;
+        int minSalary = employees[0].getSalary();
+        int maxSalary = employees[1].getSalary();
+        boolean rule = maxSalary>minSalary;
         for (int i = 0; i <= 9; i++) {
             sum += employees[i].getSalary();
         }
         System.out.println(sum);
-
-        for (int i = 0; i <= 8; i++) {
-            maxSalary = Math.max(employees[i].getSalary(), employees[i + 1].getSalary());
+        for (Employee i:
+             employees) {
+            if (!rule) {
+                minSalary=employees[1].getSalary();
+            }
         }
-        System.out.println(maxSalary);
-    }
+
+
+        }
+
 }

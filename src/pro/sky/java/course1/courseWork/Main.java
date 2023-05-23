@@ -3,6 +3,7 @@ import java.util.Arrays;
 
 
 public class Main {
+
     public static void main(String[] args) {
         Employee.employees[0] = new Employee("Иванов Иван Иванович", 1, 1);
         Employee.employees[1] = new Employee("Петров Иван Иванович", 2, 2);

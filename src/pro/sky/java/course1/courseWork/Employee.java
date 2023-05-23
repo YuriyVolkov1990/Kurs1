@@ -1,6 +1,7 @@
 package pro.sky.java.course1.courseWork;
 
 public class Employee {
+
     private final String person;
     private int depart;
     private double salary;
